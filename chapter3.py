@@ -49,5 +49,7 @@ E = 3
 print(e == E)
 print(e != E)
 
+student_name = "神"
+print(student_name)
 
 
