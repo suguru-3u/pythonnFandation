@@ -82,3 +82,15 @@
 #         eee.append(i)
 
 # print(eee)
+
+a = [10,20,30]
+print(len(a))
+
+from random import choice
+
+print(choice(a))
+
+def hello():
+    print("Hello")
+
+hello()

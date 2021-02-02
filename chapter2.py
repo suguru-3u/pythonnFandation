@@ -1,2 +1,2 @@
-kosuo = 12 * 5
-print(kosuo)
+a = 1
+print(a)
