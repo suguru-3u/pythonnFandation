@@ -63,4 +63,9 @@ print(student_name)
 
 print(type(1))
 
+ppp = '1111'
+print(int(ppp) + 4)
 
+age = 100
+age *= age
+print(age)

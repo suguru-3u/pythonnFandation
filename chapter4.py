@@ -83,14 +83,10 @@
 
 # print(eee)
 
-a = [10,20,30]
-print(len(a))
+print(max(2,3,5))
 
-from random import choice
+#input_name = input('名前を入力してください！');
+print(input_name)
 
-print(choice(a))
-
-def hello():
-    print("Hello")
-
-hello()
+import math
+print(math.ceil(15.2))
