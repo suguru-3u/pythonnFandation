@@ -1,13 +1,22 @@
 # -*- coding: utf-8 -*-
 
-a = 1 + 1 + 2
-print(a) 
+a = 1 + 1 #+ 2
+b = 2
+print(a,b) 
 # コメントアウト
 
+"""
 A = 1 + 1
 print(A)
+"""
 
-print(a,A)
+asd = str(2500) + "円"
+print(asd)
+
+print('a' * 5)
+
+bhg = "aaaaaaaaaddddddd"
+print(len(bhg))
 
 b = 0.33
 B = 1.33
@@ -51,5 +60,7 @@ print(e != E)
 
 student_name = "神"
 print(student_name)
+
+print(type(1))
 
 
