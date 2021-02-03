@@ -86,7 +86,11 @@
 print(max(2,3,5))
 
 #input_name = input('名前を入力してください！');
-print(input_name)
+#print(input_name)
 
 import math
 print(math.ceil(15.2))
+
+s = 'aa bb jj ll oo'
+print(s.count('j'))
+print(s.capitalize())
