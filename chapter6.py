@@ -16,6 +16,7 @@ print(apartment)
 print(len(apartment))
 """
 
+"""
 pos = int(input("取り出す位置"))
 colors = ["red","bule","green","orenge"]
 
@@ -26,3 +27,18 @@ except IndexError :
     print("インデックスエラー")
 except Exception as error:
     print(error)
+"""
+"""
+colors = ["red","bule","green","orenge"]
+if colors:
+    dessert = colors.pop()
+    print(dessert)
+print(colors)
+"""
+
+colors = ["red","bule","green","orenge","bule"]
+print("削除前",colors)
+target = "bule"
+while target in colors:
+    colors.remove(target)
+print("削除後",colors)
