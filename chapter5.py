@@ -58,6 +58,7 @@ print('-' * 4)
 print(p)
 """
 from random import randint
+"""
 miss = 0
 correct = 0
 print("問題!3回間違えたら終了,やめたくなったら「q」を押してね")
@@ -80,4 +81,23 @@ while miss < 3:
 print('-' * 20)
 print("正解:" ,correct)
 print("間違い：",miss)
+"""
+
+"""
+menber = []
+while len(menber) < 10:
+    n = randint(-10,100)
+    if n < 0:
+        print(f"中断:{n}")
+        break
+    if n in menber:
+        print(f"同じ数字:{n}")
+        continue
+    menber.append(n)
+else:
+    print(menber)
+"""
+
+for i in range(10):
+    print(i)
 
