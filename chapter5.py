@@ -32,7 +32,52 @@ if not name:
 print(name)
 """
 
+"""
 count = 1
 while count < 5:
     print(count)
     count += 1
+"""
+
+"""
+from random import randint
+t = 5
+p = 0
+f = "{:>4}"
+
+while t > 0:
+    v = randint(1,20)
+    print(f.format(v))
+    p += v
+    t -= 1
+    if p > 30:
+        print("中断")
+        break
+
+print('-' * 4)
+print(p)
+"""
+from random import randint
+miss = 0
+correct = 0
+print("問題!3回間違えたら終了,やめたくなったら「q」を押してね")
+
+while miss < 3:
+    a = randint(1,1000)
+    b = randint(1,1000)
+    ans = a + b
+    question = f"問題!{a}+{b}はいくつですか?"
+    value = input(question)
+    if value == "q":
+        break
+    if value == str(ans):
+        correct +=1
+        print("正解!")
+    else:
+        miss += 1
+        print("違います")
+
+print('-' * 20)
+print("正解:" ,correct)
+print("間違い：",miss)
+
