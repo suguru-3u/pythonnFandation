@@ -98,6 +98,29 @@ else:
     print(menber)
 """
 
+"""
 for i in range(10):
     print(i)
+"""
+
+"""
+for i in range(4):
+    print()
+    for j in range(3):
+        x = j * 2
+        y = i * 3
+        print(f"({x},{y})",end="")
+print()     
+"""
+
+"""
+numlist = [3,2,5,6,"x",5,6,]
+sum = 0
+for num in numlist:
+    if not isinstance(num,(int,float)):
+        print(num,'数値ではありません')
+        continue
+    sum += num
+    print(num,'/',sum)
+"""
 
