@@ -25,7 +25,14 @@ text = f"サイズ{size},重量{weight}:{result}"
 print(text) 
 """
 
+"""
 name = ""
 if not name:
     name = "匿名"
 print(name)
+"""
+
+count = 1
+while count < 5:
+    print(count)
+    count += 1
