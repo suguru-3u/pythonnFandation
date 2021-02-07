@@ -36,9 +36,15 @@ if colors:
 print(colors)
 """
 
+"""
 colors = ["red","bule","green","orenge","bule"]
 print("削除前",colors)
 target = "bule"
 while target in colors:
     colors.remove(target)
 print("削除後",colors)
+"""
+
+r = "23,45,6,7,89,99,22,22"
+top = r.split(",",3)[:3]
+print(top)
