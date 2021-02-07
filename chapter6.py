@@ -89,3 +89,31 @@ list_menber = [10,20,30,40,50]
 list_work = list_menber.copy()
 print(list_menber.reverse())
 """
+
+numbers = [2,-3,4,-5,6]
+sum = 0
+for i,num in enumerate(numbers,2):
+    print(f"{i}:",num)
+    if num > 0:
+        sum += num
+print(sum)
+
+nums = [numm *2 for numm in numbers]
+print(nums)
+
+print(2 in numbers)
+
+id_list = ["1234","567","890","555","4432","6789"]
+"""
+while True:
+    id = input("idを入力してください")
+    if id == "q":
+        print("終了")
+        break
+    try:
+        pos = id_list.index(id)
+        print(str(pos+1)+ "番目のメンバーです")
+    except:
+        print("メンバーはいません")
+"""
+print(id_list.count("1234"))
