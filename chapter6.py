@@ -45,6 +45,47 @@ while target in colors:
 print("削除後",colors)
 """
 
+"""
 r = "23,45,6,7,89,99,22,22"
 top = r.split(",",3)[:3]
 print(top)
+
+b = "and".join(r)
+print(b)
+
+colors = [1]
+data = [2]
+newdate = colors.extend(data)
+print(newdate)
+
+ccc = ["red","bule","geen","orenge","pink"]
+print(ccc[:3])
+
+letter = ["a","b","c","d","e","f","g","h"]
+print(letter[::2])
+
+print(letter[1:5][::2])
+
+print(letter[::-1])
+
+list_a = [1,2,3]
+list_b = list_a
+list_c = [1,2,3]
+
+print(list_a == list_b)
+print(list_a == list_c)
+
+print(list_a is list_b)
+print(list_a is list_c)
+
+list_a.append(88)
+print(list_a)
+print(list_b)
+list_b.append(55)
+print(list_a)
+print(list_b)
+
+list_menber = [10,20,30,40,50]
+list_work = list_menber.copy()
+print(list_menber.reverse())
+"""
