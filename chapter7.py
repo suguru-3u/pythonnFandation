@@ -51,6 +51,30 @@ print(fruite)
 """
 
 a = {1,2,3,4,5}
-b = {6,7,8,9,10}
+b = {5,6,7,8,9,10}
 c = a | b
 print(c)
+
+a = {1,2,3,4,5}
+b = {5,6,7,8,9,10}
+c = a & b
+print(c)
+
+a = {1,2,3,4,5,6}
+b = {5,6,7,8,9,10}
+c = a - b
+print(c)
+
+a = {1,2,3,4,5}
+b = {5,6,7,8,9,10}
+c = a.symmetric_difference(b)
+print(c)
+
+a = {1,2,3,4,5}
+b = {5,6,7,8,9,10}
+c = {11,22,33,44,55}
+a.update(b,c)
+print(c)
+
+print(a == b)
+print(a == a)
