@@ -41,9 +41,16 @@ num2 = set(range(0,20,2))
 print(num2)
 """
 
+"""
 fruite = set()
 fruite.add("apple")
 fruite.add("apple")
 print(fruite)
 fruite.remove("apple")
 print(fruite)
+"""
+
+a = {1,2,3,4,5}
+b = {6,7,8,9,10}
+c = a | b
+print(c)
