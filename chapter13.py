@@ -105,25 +105,26 @@
 # if os.path.exists("log.txt"):
 #     print("あたり")
 
-import os
-from random import randint
+# import os
+# from random import randint
 
-folder = "log.txt"
+# folder = "log.txt"
 
-def filewrite():
-    if not os.path.exists(folder):
-        os.makedirs(folder)
-    with open(folder,"a",encoding="utf_8") as fileobj:
-        num = randint(0,100)
-        fileobj.write(f"{num}が出ました\n")
-        print("ファイルを保存しました")
+# def filewrite():
+#     if not os.path.exists(folder):
+#         os.makedirs(folder)
+#     with open(folder,"a",encoding="utf_8") as fileobj:
+#         num = randint(0,100)
+#         fileobj.write(f"{num}が出ました\n")
+#         print("ファイルを保存しました")
 
-if os.path.exists(folder):
-    while True:
-        answer = input("上書きしてもいいですか?(y / n)")
-        if answer == "y":
-            filewrite()
-        elif answer == "n":
-            break
-else:
-    filewrite()
+# if os.path.exists(folder):
+#     while True:
+#         answer = input("上書きしてもいいですか?(y / n)")
+#         if answer == "y":
+#             filewrite()
+#         elif answer == "n":
+#             break
+# else:
+#     filewrite()
+
