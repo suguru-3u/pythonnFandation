@@ -37,14 +37,26 @@
 #         text = fileobj.read()
 #         print(text)
 
-import sys
+# import sys
 import tkinter
+import tkinter.filedialog as fd
 
 root = tkinter.Tk()
-root.title(u"Software Title")
-root.geometry("400x300")
+root.withdraw()
+# root.title(u"Software Title")
+# root.geometry("400x300")
 
-Static1 = tkinter.Label(text=u'test')
-Static1.pack()
+# Static1 = tkinter.Label(text=u'test')
+# Static1.pack()
+
+file = fd.askopenfilename(
+    title = "ファイルを洗濯してください",
+    filetypes=[("TEXT",".txt"),("TEXT",".py"),("HTML",".html")]
+)
+
+if file:
+    with open(file) as fileobj:
+        text = fileobj.read()
+        print(text)
 
 root.mainloop()
