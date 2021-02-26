@@ -66,14 +66,54 @@ import numpy as np
 # plt.pie(V,explode = ex,labels = labels,autopct = '%1.1f%%',startangle = 90)
 # plt.show()
 
+# x1,y1 = range(0,5),[61,88,99,11,23]
+# x2,y2 = range(0,5),[61,55,22,11,23]
+# labels = ["a","b","c","d","e"]
+# fig = plt.figure()
+# ax1 = fig.add_subplot(1,2,1)
+# ax1 .bar(x1,y1,color="b",tick_label= labels)
+# ax1.set_title("dog")
+# ax2 = fig.add_subplot(1,2,2)
+# ax2 .bar(x2,y2,color="g",tick_label= labels)
+# ax2.set_title("cat")
+# plt.show()
+
+# x1,y1 = range(0,5),[61,88,99,11,23]
+# x2,y2 = range(0,5),[61,55,22,11,23]
+# labels = ["a","b","c","d","e"]
+# fig = plt.figure()
+# ax1 = fig.add_subplot(2,1,1)
+# ax1 .bar(x1,y1,color="b",tick_label= labels)
+# ax1.set_title("dog")
+# ax2 = fig.add_subplot(2,1,2)
+# ax2 .bar(x2,y2,color="g",tick_label= labels)
+# ax2.set_title("cat")
+# plt.show()
+
+# x1,y1 = range(0,5),[61,88,99,11,23]
+# x2,y2 = range(0,5),[61,55,22,11,23]
+# x3,y3 = range(0,5),[61,55,22,11,23]
+# labels = ["a","b","c","d","e"]
+# fig = plt.figure()
+# ax1 = fig.add_subplot(1,2,1)
+# ax1 .bar(x1,y1,color="b",tick_label= labels)
+# ax1.set_title("dog")
+# ymin,ymax = plt.ylim()
+# ax2 = fig.add_subplot(1,2,2)
+# ax2 .bar(x2,y2,color="g",tick_label= labels)
+# ax2.set_title("cat")
+# plt.ylim(ymin,ymax)
+# plt.show()
+
 x1,y1 = range(0,5),[61,88,99,11,23]
 x2,y2 = range(0,5),[61,55,22,11,23]
+x3,y3 = range(0,5),[61,55,22,11,23]
 labels = ["a","b","c","d","e"]
-fig = plt.figure()
-ax1 = fig.add_subplot(1,2,1)
+fig,(ax1,ax2) = plt.subplots(nrows=1,ncols=2,sharey=True)
 ax1 .bar(x1,y1,color="b",tick_label= labels)
 ax1.set_title("dog")
-ax2 = fig.add_subplot(1,2,2)
+ymin,ymax = plt.ylim()
 ax2 .bar(x2,y2,color="g",tick_label= labels)
 ax2.set_title("cat")
+plt.ylim(ymin,ymax)
 plt.show()
