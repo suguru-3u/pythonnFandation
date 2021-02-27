@@ -50,12 +50,22 @@ import numpy as np
 # print(b.sum(1))
 
 
-sigma = 3.5
-mu = 65
+# sigma = 3.5
+# mu = 65
 
-data = sigma * np.random.randn(200) + mu
-x = float(input("得点は?"))
-t_socre = 10 *(x - data.mean() / data.std() + 50)
-print(round(data.mean(),1))
-print(round(data.std(),1))
-print(round(t_socre,1))
+# data = sigma * np.random.randn(200) + mu
+# x = float(input("得点は?"))
+# t_socre = 10 *(x - data.mean() / data.std() + 50)
+# print(round(data.mean(),1))
+# print(round(data.std(),1))
+# print(round(t_socre,1))
+
+# a = np.array([5,4])
+# b = np.array([5,-2])
+# c = a + b
+# print(c)
+
+a = np.array([5,4])
+b = np.array([5,-2])
+c = np.dot(a,b)
+print(c)
