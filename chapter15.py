@@ -1,4 +1,6 @@
 import numpy as np
+import matplotlib.pyplot as plt
+import math
 
 # a = np.array([1,2,3])
 # print(a.dtype)
@@ -70,5 +72,27 @@ import numpy as np
 # c = np.dot(a,b)
 # print(c)
 
-a = np.arange(10)
-print(a)
+# a = np.arange(10,20,2).reshape(5,1)
+# print(a)
+
+# data = np.array([1,2,3])
+# data = data.repeat(3).reshape(3,3)
+# print(data)
+
+# x = np.random.rand(100)
+# y = np.random.rand(100)
+# plt.scatter(x,y)
+# plt.show()
+
+# data = np.random.poisson(lam=50,size=1000)
+# count,bins_edges,patches = plt.hist(data,bins = 100)
+# plt.grid()
+# plt.show()
+
+# a = np.random.seed(10)
+# a = np.random.randn(3)
+# print(a)
+
+# b = np.random.seed(10)
+# b = np.random.randn(3)
+# print(b)
