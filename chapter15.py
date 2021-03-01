@@ -61,11 +61,14 @@ import numpy as np
 # print(round(t_socre,1))
 
 # a = np.array([5,4])
-# b = np.array([5,-2])
+# b = np.array([5,-2    ])
 # c = a + b
 # print(c)
 
-a = np.array([5,4])
-b = np.array([5,-2])
-c = np.dot(a,b)
-print(c)
+# a = np.array([5,4])
+# b = np.array([5,-2])
+# c = np.dot(a,b)
+# print(c)
+
+a = np.arange(10)
+print(a)
