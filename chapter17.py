@@ -27,8 +27,8 @@ from sklearn import metrics
 # plt.show()
 
 
- plt.title("Yes")
-plt.xlabel('sepal length(cm)')
-plt.ylabel('sepal width(cm)')
-plt.legend()
-plt.show()
+#  plt.title("Yes")
+# plt.xlabel('sepal length(cm)')
+# plt.ylabel('sepal width(cm)')
+# plt.legend()
+# plt.show()
