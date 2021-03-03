@@ -4,7 +4,7 @@ import time
 class Clock():
     def __init__(self):
         self.root = tk.Tk()
-        self.label = tk.Label(text="",font=('Helvetica',48),fg='red')
+        self.label = tk.Label(text="",font=('Helvetica',48),fg='black')
         self.label.pack()
         self.update_clock()
         self.root.mainloop()
