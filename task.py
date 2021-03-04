@@ -9,8 +9,38 @@ class App:
         self.master.title('TODOアプリ')
         self.master.geometry('400x300')
 
+        # 入力エリア
+        self.input_area = InputArea(self.master)
+        self.Input_area.pack()
+
     def mainloop(self):
         self.master.mainloop()
+
+class InputArea(tk.Frame):
+    """
+    TODOの入力エリア
+    ユーザーの入力を処理する
+    ユーザーが入力したTODOテキストを追加ボタンでリストに追加するのが役割
+    """
+
+    def __init__(self):
+        super(InputArea,self).__init__(master)
+
+        # ラベル
+        self.label = tk.Label(self,text="TODO")
+        self.label.pack(side='left')
+
+        # 入力行の作成
+        self.entry = tk.Entry(self)
+        self.entry.pack(side='left')
+
+        # 追加ボタン
+        self.add_btn = tk.Button(self,text='追加',command=self._click_add_btn)
+        self.add_btn.pack(side='left')
+
+        def _click_add_btn(self):
+            print('add',self.entry.get())
+
 
 def main():
     app = App()
@@ -19,21 +49,3 @@ def main():
 if __name__ == '__main__':
     main()
 
-
-# root = tk.Tk()
-# root.title(u"タスク管理ファイル")
-# root.geometry("400x300")
-
-# #画面上部
-# Static1 = tk.Label(text=u'本日のタスクを記入してください')
-# Static1.pack()
-
-# #入力欄
-# EditBox = tk.Entry(width=50)
-# EditBox.pack()
-
-# #　入力された文字を取得
-# value = EditBox.get()
-# print(value)
-
-# root.mainloop()
