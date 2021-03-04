@@ -8,15 +8,17 @@ class App:
         self.master = tk.Tk()
         self.master.title('TODOアプリ')
         self.master.geometry('400x300')
+        self.master.configure(padx=16, pady=16)
 
-        # 入力エリア
+        # TODO入力エリアを作成
         self.input_area = InputArea(self.master)
-        self.input_area.pack()
+        self.input_area.pack(side='top', fill='x')
         self.input_area.click_add_btn = self.click_add_btn
 
-        # 表示エリア
+        # TODOリストの表示エリアを作成
         self.list_area = ListArea(self.master)
-        self.list_area.pack()
+        self.list_area.pack(side='bottom', expand=True, fill='both')
+
 
     def mainloop(self):
         self.master.mainloop()
