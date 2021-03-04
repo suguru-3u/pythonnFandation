@@ -83,7 +83,6 @@ class ListArea(tk.Frame):
         """
         選択中のTODOを削除する
         """
-        print('delete selection')
         sel = self.listbox.curselection()
         for i in sel[::-1]:
             self.listbox.delete(i)
