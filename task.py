@@ -12,6 +12,7 @@ class App:
         # 入力エリア
         self.input_area = InputArea(self.master)
         self.input_area.pack()
+        self.input_area.click_add_btn = self.click_add_btn
 
         # 表示エリア
         self.list_area = ListArea(self.master)
@@ -19,6 +20,18 @@ class App:
 
     def mainloop(self):
         self.master.mainloop()
+
+    def click_add_btn(self):
+        """
+        このメソッドを追加
+
+        入力エリアの追加ボタンが押されたら呼ばれる
+        入力エリアの入力値をリストエリアに追加する
+        """
+        todo = self.input_area.entry.get() # 入力値を取得
+        self.input_area.entry.delete(0, 'end') # 入力行に残ったテキストを削除
+        self.list_area.listbox.insert('end', todo) # リストにTODOを追加
+
 
 class InputArea(tk.Frame):
     """
@@ -29,6 +42,9 @@ class InputArea(tk.Frame):
 
     def __init__(self,master):
         super(InputArea,self).__init__(master)
+
+         # ハンドル
+        self.click_add_btn = None 
 
         # ラベル
         self.label = tk.Label(self,text="TODO")
@@ -43,7 +59,8 @@ class InputArea(tk.Frame):
         self.add_btn.pack(side='left')
 
     def _click_add_btn(self):
-        print('add',self.entry.get())
+         if self.click_add_btn:
+            self.click_add_btn()
 
 class ListArea(tk.Frame):
     """
@@ -70,6 +87,8 @@ class ListArea(tk.Frame):
         sel = self.listbox.curselection()
         for i in sel[::-1]:
             self.listbox.delete(i)
+
+
 
 
 def main():
