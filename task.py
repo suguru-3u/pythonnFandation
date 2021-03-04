@@ -16,5 +16,6 @@ EditBox.pack()
 
 #　入力された文字を取得
 value = EditBox.get()
+print(value)
 
 root.mainloop()
