@@ -11,7 +11,7 @@ class App:
 
         # 入力エリア
         self.input_area = InputArea(self.master)
-        self.Input_area.pack()
+        self.input_area.pack()
 
     def mainloop(self):
         self.master.mainloop()
@@ -23,7 +23,7 @@ class InputArea(tk.Frame):
     ユーザーが入力したTODOテキストを追加ボタンでリストに追加するのが役割
     """
 
-    def __init__(self):
+    def __init__(self,master):
         super(InputArea,self).__init__(master)
 
         # ラベル
@@ -38,8 +38,8 @@ class InputArea(tk.Frame):
         self.add_btn = tk.Button(self,text='追加',command=self._click_add_btn)
         self.add_btn.pack(side='left')
 
-        def _click_add_btn(self):
-            print('add',self.entry.get())
+    def _click_add_btn(self):
+        print('add',self.entry.get())
 
 
 def main():
