@@ -68,6 +68,7 @@ class InputArea(tk.Frame):
 
 
 class ListArea(tk.Frame):
+
     """
     TODOリストの表示エリア
     ユーザーが入力したTODOが表示される
@@ -84,6 +85,7 @@ class ListArea(tk.Frame):
         self.del_btn = tk.Button(self, text='削除', command=self._click_del_btn)
         self.del_btn.pack(side='bottom', fill='x')
 
+
     def _click_del_btn(self):
         """
         選択中のTODOを削除する
@@ -92,11 +94,9 @@ class ListArea(tk.Frame):
         for i in sel[::-1]:
             self.listbox.delete(i)
 
-
 def main():
     app = App()
     app.mainloop()
-
 
 if __name__ == '__main__':
     main()
