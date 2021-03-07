@@ -2,23 +2,6 @@ import sys
 import tkinter as tk
 import tkinter.messagebox as tkMessage
 
-<<<<<<< HEAD
-root = tk.Tk()
-root.title(u"タスク管理ファイル")
-root.geometry("400x400")
-
-taskList = []
-
-#　入力された文字を取得
-def Update_task(event):
-    getvalue = EditBox.get()
-    taskNumber = len(taskList)
-    print(taskNumber)
-    taskList = getvalue   
-    EditBox.delete(0, tk.END)
-    tkMessage.showinfo('info',"Taskが登録されました")
-    print(taskList)
-=======
 # -*- coding: utf-8 -*-
 import tkinter as tk
 
@@ -101,7 +84,6 @@ class ListArea(tk.Frame):
         # 削除ボタンの作成
         self.del_btn = tk.Button(self, text='削除', command=self._click_del_btn)
         self.del_btn.pack(side='bottom', fill='x')
->>>>>>> 0ab2226369fcfb6d0eb99a33f156828cf5d612d2
 
 
     def _click_del_btn(self):
@@ -112,20 +94,9 @@ class ListArea(tk.Frame):
         for i in sel[::-1]:
             self.listbox.delete(i)
 
-<<<<<<< HEAD
-#ボタン
-Button = tk.Button(text=u'登録する')
-Button.bind("<Button-1>",Update_task)
-Button.pack()
-
-#Task内容
-label2 = tk.Label(text=taskList)
-label2.pack()
-=======
 def main():
     app = App()
     app.mainloop()
->>>>>>> 0ab2226369fcfb6d0eb99a33f156828cf5d612d2
 
 if __name__ == '__main__':
     main()
